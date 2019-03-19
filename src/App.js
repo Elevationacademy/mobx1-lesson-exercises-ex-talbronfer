@@ -6,6 +6,7 @@ import './App.css';
 class App extends Component {
   checkItem = () => {
     //your code here
+    
   }
   editItem = () => {
     //your code here
