@@ -22,6 +22,7 @@ export class ShoppingList {
     deleteItem = () => {
         // your code here
     } 
+    
 }
 
 // let groceryList = new ShoppingList()
