@@ -6,7 +6,7 @@ import store from '../../src/stores/groceryStore'
 
 configure({ adapter: new Adapter() });
 
-describe("exercise 3", () => {
+describe("exercise3", () => {
     it ('The store should have an editItem function that edits the location of a given item', () => {
         store.addItem("test")
         store.editItem("test", "wonderland")

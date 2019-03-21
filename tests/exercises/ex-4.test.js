@@ -6,7 +6,7 @@ import store from '../../src/stores/groceryStore'
 
 configure({ adapter: new Adapter() });
 
-describe("exercise 3", () => {
+describe("exercise4", () => {
     it ('The store should have a deleteItem function that deletes an item from the list', () => {
         store.addItem("test")
         store.deleteItem("test")

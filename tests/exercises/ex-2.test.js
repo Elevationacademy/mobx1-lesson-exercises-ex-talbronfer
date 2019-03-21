@@ -7,7 +7,7 @@ import {isObservableProp } from 'mobx'
 
 configure({ adapter: new Adapter() });
 
-describe("exercise 2", () => {
+describe("exercise2", () => {
     it('Each item should have a location property', () => {
         store.list.forEach(i => {
             expect(i.location).toBeTruthy()
