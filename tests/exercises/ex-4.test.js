@@ -23,4 +23,5 @@ describe("exercise4", () => {
         wrapper.find('.deleteButton').first().simulate('click')
         expect(wrapper.find(".listItem").first().props().value).not.toBe(selected)
     })
+    
 })
