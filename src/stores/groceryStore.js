@@ -1,29 +1,41 @@
 import { observable, action } from 'mobx'
 
-export class Item {
-// your code here
+class Item {
+    @observable name
+    @observable completed = false
+    @observable location = 'Super Sell'
+    constructor(name) {
+        this.name = name
+    }
 }
 
-// let potatoes = new Item("Potatoes")
+let potatoes = new Item("Potatoes")
 
-export class ShoppingList {
-    // your code here
-    list = [];
-    length;
-    checkItem = () => {
-        // your code here
+class ShoppingList {
+    @observable list = []
+    @observable length
+    @action checkItem = (name) => {
+        let item = this.list.find(i => i.name === name)
+        item.completed = !item.completed
     }
-    addItem = () => {
-        // your code here
+    @action addItem = (name) => {
+        const newItem = new Item(name)
+        this.list.push(newItem)
     }
-    editItem = () => {
-        // your code here
+    @action editItem = (name, newLocation) => {
+        this.list.forEach(i => console.log(i.name))
+        let item = this.list.find(i => i.name === name)
+        item.location = newLocation
+        
     }
-    deleteItem = () => {
-        // your code here
+    @action deleteItem = (name) => {
+        let itemIndex = this.list.findIndex(i => i.name === name)
+        this.list.splice(itemIndex, 1)
     } 
-    
 }
 
-// let groceryList = new ShoppingList()
-// groceryList.list.push(potatoes)
+let groceryList = new ShoppingList()
+groceryList.list.push(potatoes)
+groceryList.addItem("hunter")
+
+export default groceryList
