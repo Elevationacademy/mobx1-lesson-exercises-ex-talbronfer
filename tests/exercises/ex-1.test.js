@@ -24,4 +24,5 @@ describe("exercise1", () => {
         const addItem = shoppingList.addItem
         expect(addItem.isMobxAction).toBeTruthy()
     })
+    
 })
