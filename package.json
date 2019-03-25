@@ -32,6 +32,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest-cli": "^24.1.0",
     "jest-config": "^24.1.0",
+
     "jest-json-reporter": "^1.2.2",
     "jest-runner": "^24.1.0",
     "jest-runtime": "^24.1.0",
@@ -61,8 +62,8 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^24.1.0",
-    "jest-expect-message": "^1.0.0",
     "jest-transform-stub": "^1.0.0",
+    "jest-expect-message": "github:Elevationacademy/jest-expect-message",
     "react-test-renderer": "^16.4.2"
   },
   "scripts": {
