@@ -17,6 +17,7 @@ describe("exercise1", () => {
     })
     
 
+
     it ('addItem function should be a MobX action', () => {
         const addItem = store.addItem
         expect(addItem.isMobxActionm, "addItem is not a MobX function. Make sure it has the decorator syntax").toBeTruthy()
