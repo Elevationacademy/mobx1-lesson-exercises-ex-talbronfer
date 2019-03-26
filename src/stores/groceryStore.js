@@ -14,6 +14,10 @@ let potatoes = new Item("Potatoes")
 class ShoppingList {
     @observable list = []
     @observable length
+
+    init() {
+        // whatever init lesson
+    }
     @action checkItem = (name) => {
         let item = this.list.find(i => i.name === name)
         item.completed = !item.completed

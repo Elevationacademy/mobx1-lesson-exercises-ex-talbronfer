@@ -62,7 +62,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^24.1.0",
     "jest-transform-stub": "^1.0.0",
-    "jest-expect-message": "github:Elevationacademy/jest-expect-message",
+    "jest-expect-message": "github:Elevationacademy/jest-expect-message#v1.5.0",
     "react-test-renderer": "^16.4.2"
   },
   "scripts": {

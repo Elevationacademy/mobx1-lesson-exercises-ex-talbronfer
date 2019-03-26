@@ -15,7 +15,7 @@ describe("exercise1", () => {
         const test = shoppingList.list.find(i => i.name === "test")
         expect(test, "The item wasn't correctly added to the state. Make sure that it works.").toBeTruthy()
     })
-    
+
 
 
     it ('addItem function should be a MobX action', () => {
