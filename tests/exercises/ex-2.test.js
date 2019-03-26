@@ -20,6 +20,7 @@ describe("exercise2", () => {
         expect(test.location, `Value of location is ${test.location}. Should be: "Super Sell 2"`).toBe("Super Sell2")
     })
     
+
     it('the location should be rendered next to each item', () => {
         const wrapper = render(<App store = {store}/>)
         let location = wrapper.find('.location').first().html()

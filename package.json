@@ -32,7 +32,6 @@
     "html-webpack-plugin": "2.29.0",
     "jest-cli": "^24.1.0",
     "jest-config": "^24.1.0",
-
     "jest-json-reporter": "^1.2.2",
     "jest-runner": "^24.1.0",
     "jest-runtime": "^24.1.0",
