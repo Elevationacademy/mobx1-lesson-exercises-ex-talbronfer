@@ -19,12 +19,12 @@ describe("exercise2", () => {
         let test = store.list.find(i => i.name === "test")
         expect(test.location, `Value of location is ${test.location}. Should be: "Super Sell 2"`).toBe("Super Sell2")
     })
-    
+
 
     it('the location should be rendered next to each item', () => {
         const wrapper = render(<App store = {store}/>)
         let location = wrapper.find('.location').first().html()
         console.log(location)
-        expect(location).toBeTruthy()
+        expect(location, `Location couldn't be found`).toBeFalsy()
     })
 })
