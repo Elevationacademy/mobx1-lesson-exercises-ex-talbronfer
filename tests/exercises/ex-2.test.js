@@ -17,7 +17,7 @@ describe("exercise2", () => {
     it('The location property should have a default value of "Super Sell"', () => {
         store.addItem("test")
         let test = store.list.find(i => i.name === "test")
-        expect(test.location, `Value of location is ${test.location}. Should be: "Super Sell 2"`).toBe("Super Sell")
+        expect(test.location, `Value of location is ${test.location}. Should be: "Super Sell"`).toBe("Super Sell2")
     })
 
 
