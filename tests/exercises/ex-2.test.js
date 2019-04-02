@@ -26,5 +26,6 @@ describe("exercise2", () => {
         let location = wrapper.find('.location').first().html()
         console.log(location)
         expect(location).toBeTruthy()
+
     })
 })
