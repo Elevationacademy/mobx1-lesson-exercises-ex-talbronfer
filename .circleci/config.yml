@@ -18,7 +18,7 @@ jobs:
     steps:
       - run:
           name: update-build-status
-          command: curl -XPUT -d '{ "repoName": "mobx1-lesson-exercises-ex-talbronfer", "status": "RUNNING", "commitSha": "e68f63191dfaa4565cf325b3f99f6b3c2c2babf9", "buildId": "1234-5678", "testResults": "{}"}' 'https://hnvbmypjh9.execute-api.eu-central-1.amazonaws.com/prod/circleci-builds'
+          command: curl -XPUT -d '{ 'repoName': 'mobx1-lesson-exercises-ex-talbronfer', 'status': 'RUNNING', 'commitSha': 'e68f63191dfaa4565cf325b3f99f6b3c2c2babf9', 'buildId': '1234-5678', 'testResults': '{}'}' 'https://hnvbmypjh9.execute-api.eu-central-1.amazonaws.com/prod/circleci-builds'
       - checkout
       - restore_cache:
           keys:
